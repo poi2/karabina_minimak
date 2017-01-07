@@ -2,6 +2,21 @@
 <root>
 
   <item>
+    <name>For Minimak Users</name>
+    <item>
+      <name>──────────────────────────────</name>
+      <appendix>For Minimak Input Source</appendix>
+    </item>
+    <item>
+      <name>Minimak's Shift+3 to # (revival #)</name>
+      <identifier>remap.minimak_rivival_shift3</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::3, ModifierFlag::SHIFT_L,
+        KeyCode::3, ModifierFlag::OPTION_L,
+      </autogen>
+    </item>
+
     <name>For Minimak4 Users</name>
     <item>
       <name>──────────────────────────────</name>
