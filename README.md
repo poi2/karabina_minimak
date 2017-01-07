@@ -1,0 +1,1 @@
+# karabina_minimak
