@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<root>
+
+  <item>
+    <name>For Minimak4 Users</name>
+    <item>
+      <name>──────────────────────────────</name>
+      <appendix>For Minimak4 Input Source</appendix>
+    </item>
+    <item>
+      <name>Minimak4's Control+D to generally Control+E (revival Control+E)</name>
+      <identifier>remap.minimak4_rivival_controlE</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::E, ModifierFlag::CONTROL_L,
+        KeyCode::K, ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+    <item>
+      <name>Minimak4's Control+T to generally Control+D (revival Control+D)</name>
+      <identifier>remap.minimak4_rivival_controlD</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::D, ModifierFlag::CONTROL_L,
+        KeyCode::E, ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+    <item>
+      <name>Minimak4's Control+K to generally Control+T (revival Control+T)</name>
+      <identifier>remap.minimak4_rivival_controlT</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::T, ModifierFlag::CONTROL_L,
+        KeyCode::D, ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+    <item>
+      <name>Minimak4's Control+E to generally Control+K (revival Control+K)</name>
+      <identifier>remap.minimak4_rivival_controlK</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::CONTROL_L,
+        KeyCode::T, ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+
+    <item>
+      <name>Minimak4's Command+D to generally Command+E (revival Command+E)</name>
+      <identifier>remap.minimak4_rivival_commandE</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::E, ModifierFlag::COMMAND_L,
+        KeyCode::K, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+    <item>
+      <name>Minimak4's Command+T to generally Command+D (revival Command+D)</name>
+      <identifier>remap.minimak4_rivival_commandD</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::D, ModifierFlag::COMMAND_L,
+        KeyCode::E, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+    <item>
+      <name>Minimak4's Command+K to generally Command+T (revival Command+T)</name>
+      <identifier>remap.minimak4_rivival_commandT</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::T, ModifierFlag::COMMAND_L,
+        KeyCode::D, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+    <item>
+      <name>Minimak4's Command+E to generally Command+K (revival Command+K)</name>
+      <identifier>remap.minimak4_rivival_commandK</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::COMMAND_L,
+        KeyCode::T, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+
+  </item>
+</root>
