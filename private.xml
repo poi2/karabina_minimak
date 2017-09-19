@@ -7,92 +7,207 @@
       <name>──────────────────────────────</name>
       <appendix>For Minimak Input Source</appendix>
     </item>
-    <item>
-      <name>Minimak's Shift+3 to # (revival #)</name>
-      <identifier>remap.minimak_rivival_shift3</identifier>
-      <autogen>
-        __KeyToKey__
-        KeyCode::3, ModifierFlag::SHIFT_L,
-        KeyCode::3, ModifierFlag::OPTION_L,
-      </autogen>
-    </item>
 
     <name>For Minimak4 Users</name>
     <item>
       <name>──────────────────────────────</name>
       <appendix>For Minimak4 Input Source</appendix>
     </item>
+
     <item>
-      <name>Minimak4's Control+D to generally Control+E (revival Control+E)</name>
-      <identifier>remap.minimak4_rivival_controlE</identifier>
+      <name>Activate Minimak4</name>
+      <identifier>remap.minimak4_activate</identifier>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::D</autogen>
+    </item>
+
+    <item>
+      <name>Minimak4's Control+DTKE to generally Control+DTKE (revival Control)</name>
+      <identifier>remap.minimak4_rivival_control</identifier>
+      <autogen>__KeyToKey__ KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::E, ModifierFlag::CONTROL_R</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::D, ModifierFlag::CONTROL_R</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::T, ModifierFlag::CONTROL_R</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::K, ModifierFlag::CONTROL_R</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_R, KeyCode::E, ModifierFlag::CONTROL_R</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::CONTROL_R, KeyCode::D, ModifierFlag::CONTROL_R</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::CONTROL_R, KeyCode::T, ModifierFlag::CONTROL_R</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::CONTROL_R, KeyCode::K, ModifierFlag::CONTROL_R</autogen>
+    </item>
+
+    <item>
+      <name>Minimak4's Command+DTKE to generally Command+DTKE (revival Command)</name>
+      <identifier>remap.minimak4_rivival_command</identifier>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::COMMAND_L, KeyCode::K, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::COMMAND_L, KeyCode::E, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::COMMAND_L, KeyCode::D, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_L, KeyCode::T, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+  </item>
+
+  <item>
+    <name>For Kinesis</name>
+    <item>
+      <name>──────────────────────────────</name>
+      <appendix>For Kinesis Input Source</appendix>
+    </item>
+    <item>
+      <name>End to Cmd + Alt + Left</name>
+      <identifier>remap.kinesis_tab_move_left</identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::E, ModifierFlag::CONTROL_L,
-        KeyCode::K, ModifierFlag::CONTROL_L
+        KeyCode::END,
+        KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
       </autogen>
     </item>
     <item>
-      <name>Minimak4's Control+T to generally Control+D (revival Control+D)</name>
-      <identifier>remap.minimak4_rivival_controlD</identifier>
+      <name>PageDown to Cmd + Alt + Right</name>
+      <identifier>remap.kinesis_tab_move_right</identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::D, ModifierFlag::CONTROL_L,
-        KeyCode::E, ModifierFlag::CONTROL_L
+        KeyCode::PAGEDOWN,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
       </autogen>
     </item>
     <item>
-      <name>Minimak4's Control+K to generally Control+T (revival Control+T)</name>
-      <identifier>remap.minimak4_rivival_controlT</identifier>
+      <name>Delete to FN</name>
+      <identifier>remap.kinesis_delete_to_fn</identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::T, ModifierFlag::CONTROL_L,
-        KeyCode::D, ModifierFlag::CONTROL_L
-      </autogen>
-    </item>
-    <item>
-      <name>Minimak4's Control+E to generally Control+K (revival Control+K)</name>
-      <identifier>remap.minimak4_rivival_controlK</identifier>
-      <autogen>
-        __KeyToKey__
-        KeyCode::K, ModifierFlag::CONTROL_L,
-        KeyCode::T, ModifierFlag::CONTROL_L
+        KeyCode::FORWARD_DELETE,
+        KeyCode::FN,
       </autogen>
     </item>
 
     <item>
-      <name>Minimak4's Command+D to generally Command+E (revival Command+E)</name>
-      <identifier>remap.minimak4_rivival_commandE</identifier>
+      <name>FN + J,K,L,; to Left, Right, Up, Down</name>
+      <identifier>remap.kinesis_fn_cursor</identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::E, ModifierFlag::COMMAND_L,
-        KeyCode::K, ModifierFlag::COMMAND_L
+        KeyCode::J, ModifierFlag::FN,
+        KeyCode::CURSOR_LEFT,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::FN,
+        KeyCode::CURSOR_UP,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::FN,
+        KeyCode::CURSOR_DOWN,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON, ModifierFlag::FN,
+        KeyCode::CURSOR_RIGHT,
       </autogen>
     </item>
+
     <item>
-      <name>Minimak4's Command+T to generally Command+D (revival Command+D)</name>
-      <identifier>remap.minimak4_rivival_commandD</identifier>
+      <name>PageUp to Command + →</name>
+      <identifier>remap.kinesis_page_up_to_tab</identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::D, ModifierFlag::COMMAND_L,
-        KeyCode::E, ModifierFlag::COMMAND_L
+        KeyCode::PAGEUP,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
       </autogen>
     </item>
+
     <item>
-      <name>Minimak4's Command+K to generally Command+T (revival Command+T)</name>
-      <identifier>remap.minimak4_rivival_commandT</identifier>
+      <name>§ to ~</name>
+      <identifier>remap.danish_dollar_to_tilda</identifier>
+      <autogen>
+      __KeyToKey__
+      KeyCode::DANISH_DOLLAR,
+      KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L,
+    </autogen>
+    </item>
+
+    <item>
+      <name>FN + N,H to _,-</name>
+      <identifier>remap.kinesis_fn_hyphen_underscore</identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::T, ModifierFlag::COMMAND_L,
-        KeyCode::D, ModifierFlag::COMMAND_L
+        KeyCode::N, ModifierFlag::FN,
+        KeyCode::MINUS, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::H, ModifierFlag::FN,
+        KeyCode::MINUS,
       </autogen>
     </item>
+
     <item>
-      <name>Minimak4's Command+E to generally Command+K (revival Command+K)</name>
-      <identifier>remap.minimak4_rivival_commandK</identifier>
+      <name>FN + A,Z to =,+</name>
+      <identifier>remap.kinesis_fn_equal_plus</identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::K, ModifierFlag::COMMAND_L,
-        KeyCode::T, ModifierFlag::COMMAND_L
+        KeyCode::Z, ModifierFlag::FN,
+        KeyCode::KEYPAD_PLUS,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::A, ModifierFlag::FN,
+        KeyCode::EQUAL,
+      </autogen>
+    </item>
+
+    <item>
+      <name>FN + QWERT...YUIOP to !@#$%^&*()</name>
+      <identifier>remap.kinesis_fn_symbols</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::Q, ModifierFlag::FN,
+        KeyCode::1, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::W, ModifierFlag::FN,
+        KeyCode::2, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::E, ModifierFlag::FN,
+        KeyCode::3, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::R, ModifierFlag::FN,
+        KeyCode::4, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::T, ModifierFlag::FN,
+        KeyCode::5, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::Y, ModifierFlag::FN,
+        KeyCode::6, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::U, ModifierFlag::FN,
+        KeyCode::7, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::I, ModifierFlag::FN,
+        KeyCode::8, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::O, ModifierFlag::FN,
+        KeyCode::9, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::P, ModifierFlag::FN,
+        KeyCode::0, ModifierFlag::SHIFT_L,
       </autogen>
     </item>
 
